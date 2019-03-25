@@ -226,6 +226,7 @@ body ul, body ol {
       line-height: 35px; }
   .about-us__dl-wrap dd {
     display: none;
+    margin-bottom: 10px;
     padding-left: 18px;
     color: #3d3d3d;
     font-size: 15px;
@@ -760,8 +761,7 @@ body ul, body ol {
       height: 100px;
       border: 1px solid #eeeeee;
       background: url("../../images/icons/clients.png") no-repeat;
-      transition-property: transform;
-      transition: 0.3s; }
+      transition: transform 0.3s; }
       .portfolios .clients li a {
         height: 100%; }
       .portfolios .clients li:hover {

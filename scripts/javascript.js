@@ -29,7 +29,7 @@ $(document).ready(function () {
             }
 
             // Show the content
-            var $content = $(this).next();
+            $content = $(this).next();
             $content.slideToggle(100);
             $('dd').not($content).slideUp('slow');
         });
@@ -42,7 +42,7 @@ $(document).ready(function () {
         $(".send-form").click(function () {
             $(".send-mail").fadeToggle("slow");
             });
-        $("#exit").click(function () {
+        $("#close-send-form").click(function () {
             $(".send-mail").fadeToggle(800);
             });
 });
@@ -54,7 +54,7 @@ $(document).ready(function () {
         $(".learn-more").click(function () {
             $(".learn-more-wrap").fadeToggle("slow");
         });
-        $(".close").click(function () {
+        $("#close-learn-more").click(function () {
             $(".learn-more-wrap").fadeToggle(800);
         });
     });
