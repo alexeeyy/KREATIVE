@@ -6,14 +6,39 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KREATIVE</title>
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
     <link rel="stylesheet" href="styles/css/normalize.css">
     <link rel="stylesheet" href="styles/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
 <header class="header">
+    <div class="nav-menu" style="display: none">
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="top__logo logo"><img src="images/icons/creative.png" alt="Logo"></a>
+                <a href="javascript:void(0)" id="exit-menu" class="close"></a>
+            </div>
+            <nav class="main-menu">
+                <ul class="main-menu-nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about-us">ABOUT US</a></li>
+                    <li><a href="#why-choose">SERVICES</a></li>
+                    <li><a href="#portfolios">PORTFOLIOS</a></li>
+                    <li><a href="#contact-us">CONTACT</a></li>
+                    <ul class="nav-menu-social">
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                        <li><a href="javascript:void(0)"></a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <div class="container">
-        <div class="header__top clearfix">
+        <div class="header__top">
             <a href="#" class="top__logo logo"><img src="images/icons/creative.png" alt="Logo"></a>
             <a href="#" class="top__menu-btn menu-btn"><img src="images/icons/menu.png" alt="Menu"></a>
         </div>
@@ -97,7 +122,7 @@
         </figcaption>
     </figure>
 </section>
-<section class="why-choose">
+<section id="why-choose" class="why-choose">
     <div class="container">
         <h2 class="red_line">Why <b>Choose</b> <span>Us?</span></h2>
         <ul class="why-choose__services">

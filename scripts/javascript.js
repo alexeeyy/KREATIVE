@@ -2,11 +2,11 @@
 
 $(document).ready(function () {
     'use strict';
-    $(".fixed-menu").click(function () {
-        $(".menu-navigator, .menu-exit").fadeToggle(500);
+    $(".menu-btn").click(function () {
+        $(".nav-menu").fadeToggle(500);
     });
-    $(".menu-navigator a, .menu-exit").click(function () {
-        $(".menu-navigator, .menu-exit").fadeToggle(500);
+    $(".nav-menu a, .exit-menu").click(function () {
+        $(".nav-menu").fadeToggle(500);
     });
 });
 
@@ -61,15 +61,15 @@ $(document).ready(function () {
 
     //Scroll
 
-    $('a[href*="#portfolios"]').on('click', function(e) {
-        e.preventDefault()
-        $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top,}, 1000, 'linear')
-    });
-
-    $('a[href*="#about-us"]').on('click', function(e) {
-        e.preventDefault()
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,}, 600, 'linear')
-    });
+    // $('a[href*="#portfolios"]').on('click', function(e) {
+    //     e.preventDefault()
+    //     $('html, body').animate({
+    //             scrollTop: $($(this).attr('href')).offset().top,}, 1000, 'linear')
+    // });
+    //
+    // $('a[href*="#about-us"]').on('click', function(e) {
+    //     e.preventDefault()
+    //     $('html, body').animate({
+    //         scrollTop: $($(this).attr('href')).offset().top,}, 600, 'linear')
+    // });
 
