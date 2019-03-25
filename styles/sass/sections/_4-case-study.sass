@@ -1,0 +1,44 @@
+.case-study
+  width: 1300px
+  margin: 0 auto
+  color: $text-white
+  & figure
+    position: relative
+    width: 50%
+    height: 400px
+    &:first-child
+      float: left
+      text-align: right
+      & figcaption
+        padding: 90px 55px 80px 150px
+    &:last-child
+      float: right
+      text-align: left
+      & figcaption
+        padding: 90px 150px 80px 55px
+
+    & img
+      max-width: 100%
+
+    & figcaption
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
+      transition-duration: 400ms
+      &:hover
+        background: rgba(224, 92, 78, 0.9)
+        cursor: pointer
+
+    & h3
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35)
+      font-size: 30px
+      line-height: 38px
+      letter-spacing: 1.5px
+
+    & p
+      font-size: 16px
+      font-weight: 300
+      line-height: 30px
+      letter-spacing: 0.8px

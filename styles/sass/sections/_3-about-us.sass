@@ -1,0 +1,54 @@
+.about-us
+  padding-top: 99px
+  background: url("../../images/backgrounds/about-us-back.png") no-repeat
+  background-size: cover
+  &__mac
+    float: right
+    margin: -130px -157px 0 25px
+  &__text-area
+    & h2
+      margin-bottom: 30px
+      line-height: 50px
+    & p
+      margin-bottom: 60px
+      color: #3d3d3d
+      line-height: 35px
+
+  &__cooperator
+    float: right
+    margin-top: 15px
+
+  &__dl-wrap
+    & dl
+      width: 63.8297872340425556104%
+    & dt
+      margin-bottom: 10px
+      padding: 0 15px 0 20px
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
+      border-radius: 2px
+      border: 1px solid #d3d3d3
+      background-color: #eee
+      font-size: 15px
+      font-weight: 600
+      line-height: 35px
+      overflow: hidden
+      transition: 0.2s
+      height: 36px
+      &:hover
+        background-color: $primary
+        color: #fff
+        border: 1px solid $primary
+      &::after
+        content: '+'
+        float: right
+        vertical-align: middle
+        font-size: 19px
+        font-weight: 700
+        line-height: 35px
+
+    & dd
+      display: none
+      padding-left: 18px
+      color: #3d3d3d
+      font-size: 15px
+      line-height: 35px

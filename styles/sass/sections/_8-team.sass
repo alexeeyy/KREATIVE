@@ -1,0 +1,52 @@
+.team
+  padding: 100px 0
+  & h2
+    margin-bottom: 80px
+  & .container > p
+    max-width: 91.489362%
+    margin-bottom: 45px
+    color: #666
+    font-weight: 300
+    line-height: 25px
+  & .flex
+    display: flex
+    justify-content: space-between
+
+    & figure
+      position: relative
+      height: 300px
+      border-radius: 2px
+      border: 1px solid $primary-Lt
+      text-align: center
+      overflow: hidden
+      &:hover figcaption
+        height: 100%
+        opacity: 1
+        padding-top: 100px
+        background: rgba(237, 110, 97, 0.8)
+
+      & figcaption
+        position: absolute
+        bottom: 0
+        opacity: 0
+        width: 100%
+        height: 0
+        transition-duration: 0.8s
+        & h4
+          color: $text-white
+          font-size: 20px
+          +bold
+          line-height: 30px
+          text-transform: uppercase
+        & p
+          margin-bottom: 78px
+          color: $text-white
+          font-weight: 300
+          line-height: 30px
+        & a
+          width: 220px
+          background: $primary-Drk
+          color: $text-white
+          font-size: 16px
+          +bold
+          line-height: 60px

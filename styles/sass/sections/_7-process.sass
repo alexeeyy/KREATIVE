@@ -1,0 +1,42 @@
+.process
+  padding: 80px 0 90px
+  background: url("../../images/backgrounds/process.png") no-repeat right
+  background-size: cover
+  & .container
+      width: 940px
+      height: 325px
+  & figure
+    & img
+      float: left
+      margin-right: 110px
+      margin-bottom: 85px
+    & figcaption
+      & li
+        position: relative
+        display: block
+        margin-bottom: 30px
+        &::before
+          content: ''
+          position: absolute
+          top: -24px
+          right: 466px
+          background: url(../../images/icons/skills.png) no-repeat
+          width: 80px
+          height: 80px
+        &:nth-child(1)::before
+          background-position: -960px
+        &:nth-child(2)::before
+          background-position: -321px
+        &:nth-child(3)::before
+          background-position: -563px
+      & h4
+        color: $text-white
+        font-size: 25px
+        font-weight: 700
+        line-height: 30px
+      & p
+        color: $text-white
+        font-weight: 300
+        line-height: 30px
+
+

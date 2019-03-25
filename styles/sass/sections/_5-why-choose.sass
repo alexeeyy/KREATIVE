@@ -1,0 +1,82 @@
+.why-choose
+  padding: 100px 0 30px
+  & h2
+    margin-bottom: 122px
+
+  &__services
+    font-size: 0
+    & li
+      position: relative
+      display: inline-block
+      vertical-align: top
+      width: 308px
+      margin-bottom: 40px
+      text-align: center
+      &:nth-child(4), &:nth-child(5), &:nth-child(6)
+        margin-bottom: 0
+      &:hover::before
+        background-color: $primary-Lt
+      &:before
+        position: absolute
+        top: 0
+        left: 110px
+        content: ''
+        background: url(../../images/icons/skills.png) no-repeat
+        width: 80px
+        height: 80px
+        cursor: pointer
+        transition-property: background-color
+        transition-duration: 0.8s
+        border-radius: 2px
+        border: 1px solid #eeeeee
+
+      &:nth-child(1)
+        &::before
+          background-position: -403px
+        &:hover::before
+          background-position: -321px
+
+      &:nth-child(2)
+        &::before
+          background-position: -724px
+        &:hover::before
+          background-position: -642px
+
+      &:nth-child(3)
+        &::before
+          background-position: -483px
+        &:hover::before
+          background-position: -564px
+
+      &:nth-child(4)
+        &::before
+          background-position: -803px
+        &:hover::before
+          background-position: -883px
+
+      &:nth-child(5)
+        &::before
+          background-position: -2px
+        &:hover::before
+          background-position: -84px
+
+      &:nth-child(6)
+        &::before
+          background-position: -246px
+        &:hover::before
+          background-position: -160px
+
+
+    & h4
+      margin: 130px 0 10px
+      color: $text-black
+      font-size: 25px
+      font-weight: 400
+      line-height: 30px
+
+    & p
+      padding: 0 5px
+      color: #a7a7a7
+      font-size: 15px
+      font-weight: 300
+      line-height: 30px
