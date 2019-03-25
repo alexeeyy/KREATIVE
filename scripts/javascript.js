@@ -9,6 +9,7 @@ $(document).ready(function () {
         $(".menu-navigator, .menu-exit").fadeToggle(500);
     });
 });
+
 //DT Switcher
 
     $( document ).ready(function () {
@@ -33,6 +34,7 @@ $(document).ready(function () {
             $('dd').not($content).slideUp('slow');
         });
 });
+
     //Mail
 
     $(document).ready(function () {
@@ -43,11 +45,31 @@ $(document).ready(function () {
         $("#exit").click(function () {
             $(".send-mail").fadeToggle(800);
             });
-        $('.view').click(function(){
-            var id = $('#profile-1');
-            $('#profile-1').fadeToggle('slow');
-            });
-        $('#close').click(function(){
-            $('#profile-1').fadeToggle('slow');
-        });
 });
+
+    //Lean More
+
+    $(document).ready(function () {
+        'use strict';
+        $(".learn-more").click(function () {
+            $(".learn-more-wrap").fadeToggle("slow");
+        });
+        $(".close").click(function () {
+            $(".learn-more-wrap").fadeToggle(800);
+        });
+    });
+
+    //Scroll
+
+    $('a[href*="#portfolios"]').on('click', function(e) {
+        e.preventDefault()
+        $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top,}, 1000, 'linear')
+    });
+
+    $('a[href*="#about-us"]').on('click', function(e) {
+        e.preventDefault()
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top,}, 600, 'linear')
+    });
+

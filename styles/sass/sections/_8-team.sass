@@ -50,3 +50,119 @@
           font-size: 16px
           +bold
           line-height: 60px
+  //<------------------------------------
+  & .learn-more-wrap
+    z-index: 999
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    background: rgba(#1a1a1a, 0.8)
+    //font-family: inherit
+    //font-size: 0
+    //text-transform: uppercase
+    & figure
+      position: fixed
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 990px
+      height: 500px
+      background: #fff
+      & .close
+        position: absolute
+        top: 0
+        right: 0
+        width: 40px
+        height: 40px
+        background: #000
+        padding: 14px
+        color: #ffffff
+      & .img-left
+        float: left
+        max-width: 369px
+        height: 100%
+      & figcaption
+        float: right
+        width: 621px
+        height: 100%
+        padding: 40px 40px 40px 20px
+        & h4
+          margin-bottom: 3px
+          color: $text-black
+          font-size: 20px
+          +bold
+          line-height: 1
+          text-transform: uppercase
+        & p
+          margin-bottom: 40px
+          color: $text-black
+          line-height: 1
+        & span
+          display: block
+          margin-bottom: 35px
+          +sans-serif
+          color: #666
+          font-size: 14px
+          font-weight: 300
+          line-height: 25px
+
+        & .learn-more-skills
+          display: flex
+          justify-content: space-between
+          width: 379px
+          margin-bottom: 30px
+          & .skill
+            width: 80px
+            height: 80px
+            padding-top: 24px
+            border: 8px solid $primary-Lt
+            border-radius: 100%
+            color: #666666
+            +sans-serif
+            font-weight: 700
+            text-transform: uppercase
+            text-align: center
+
+        & .learn-more-social
+          display: flex
+          justify-content: space-between
+          width: 200px
+          & li
+            width: 32px
+            height: 32px
+            transition-property: transform
+            transition-duration: 0.3s
+            & a
+              height: 32px
+              background: url("../../images/icons/social.png") no-repeat
+            &:hover
+              transform: scale(1.1)
+
+            &:nth-child(1) a
+              background-position: 0
+            &:nth-child(1):hover a
+              background-position: -32px
+            &:nth-child(2) a
+              background-position: -64px
+            &:nth-child(2):hover a
+                background-position: -96px
+            &:nth-child(3) a
+              background-position: -128px
+            &:nth-child(3):hover a
+                background-position: -160px
+            &:nth-child(4) a
+              background-position: -192px
+            &:nth-child(4):hover a
+                background-position: -224px
+            &:nth-child(5) a
+              background-position: -256px
+            &:nth-child(5):hover a
+                background-position: -288px
+
+
+
+

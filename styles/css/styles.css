@@ -74,7 +74,7 @@ body h1, body h2, body h3, body h4, body a {
   font-family: "Campton Light", sans-serif; }
   body h1 b, body h2 b, body h3 b, body h4 b, body a b {
     font-family: "Campton Bold", sans-serif; }
-body p, body dt, body dl {
+body p, body .contact-us .send-mail form, .contact-us .send-mail body form, body .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover body p, body .contact-us .send-mail form:active, .contact-us .send-mail body form:active, body dt, body dl {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 30px; }
@@ -100,6 +100,34 @@ body ul, body ol {
   .button:active {
     transform: scale(0.9); }
 
+::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #dfdfdf;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 30px; }
+
+:-moz-placeholder {
+  font-size: 16px;
+  color: #dfdfdf;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 30px; }
+
+::-moz-placeholder {
+  font-size: 16px;
+  color: #dfdfdf;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 30px; }
+
+:-ms-input-placeholder {
+  font-size: 16px;
+  color: #dfdfdf;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 30px; }
+
 .header {
   padding: 43px 0 47px;
   background: url("../../images/backgrounds/slider-6.jpg") no-repeat;
@@ -112,7 +140,7 @@ body ul, body ol {
     .header__top .menu-btn {
       float: right;
       margin-right: 14px; }
-  .header__textarea p {
+  .header__textarea p, .header__textarea .contact-us .send-mail form, .contact-us .send-mail .header__textarea form, .header__textarea .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .header__textarea p {
     font-family: 'Campton Light', sans-serif;
     margin-bottom: 50px;
     text-align: center;
@@ -140,7 +168,7 @@ body ul, body ol {
     display: flex;
     justify-content: space-between;
     width: 820px; }
-  .call-to-action p {
+  .call-to-action p, .call-to-action .contact-us .send-mail form, .contact-us .send-mail .call-to-action form, .call-to-action .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .call-to-action p {
     align-self: center;
     color: #eee;
     font-size: 22px;
@@ -163,7 +191,7 @@ body ul, body ol {
   .about-us__text-area h2 {
     margin-bottom: 30px;
     line-height: 50px; }
-  .about-us__text-area p {
+  .about-us__text-area p, .about-us__text-area .contact-us .send-mail form, .contact-us .send-mail .about-us__text-area form, .about-us__text-area .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .about-us__text-area p {
     margin-bottom: 60px;
     color: #3d3d3d;
     line-height: 35px; }
@@ -238,7 +266,7 @@ body ul, body ol {
       font-size: 30px;
       line-height: 38px;
       letter-spacing: 1.5px; }
-    .case-study figure p {
+    .case-study figure p, .case-study figure .contact-us .send-mail form, .contact-us .send-mail .case-study figure form, .case-study figure .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .case-study figure p {
       font-size: 16px;
       font-weight: 300;
       line-height: 30px;
@@ -304,7 +332,7 @@ body ul, body ol {
       font-size: 25px;
       font-weight: 400;
       line-height: 30px; }
-    .why-choose__services p {
+    .why-choose__services p, .why-choose__services .contact-us .send-mail form, .contact-us .send-mail .why-choose__services form, .why-choose__services .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .why-choose__services p {
       padding: 0 5px;
       color: #a7a7a7;
       font-size: 15px;
@@ -321,7 +349,7 @@ body ul, body ol {
     list-style: none; }
     .skills__bar li {
       margin-bottom: 26px; }
-      .skills__bar li p {
+      .skills__bar li p, .skills__bar li .contact-us .send-mail form, .contact-us .send-mail .skills__bar li form, .skills__bar li .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .skills__bar li p {
         margin-bottom: 5px;
         color: #202020;
         font-weight: 300;
@@ -379,7 +407,7 @@ body ul, body ol {
     font-size: 25px;
     font-weight: 700;
     line-height: 30px; }
-  .process figure figcaption p {
+  .process figure figcaption p, .process figure figcaption .contact-us .send-mail form, .contact-us .send-mail .process figure figcaption form, .process figure figcaption .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .process figure figcaption p {
     color: #fff;
     font-weight: 300;
     line-height: 30px; }
@@ -388,7 +416,7 @@ body ul, body ol {
   padding: 100px 0; }
   .team h2 {
     margin-bottom: 80px; }
-  .team .container > p {
+  .team .container > p, .team .contact-us .send-mail .container > form, .contact-us .send-mail .team .container > form, .team .contact-us .send-mail form:hover .container > p, .contact-us .send-mail form:hover .team .container > p {
     max-width: 91.489362%;
     margin-bottom: 45px;
     color: #666;
@@ -422,7 +450,7 @@ body ul, body ol {
           font-family: 'Campton Bold', sans-serif;
           line-height: 30px;
           text-transform: uppercase; }
-        .team .flex figure figcaption p {
+        .team .flex figure figcaption p, .team .flex figure figcaption .contact-us .send-mail form, .contact-us .send-mail .team .flex figure figcaption form, .team .flex figure figcaption .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .team .flex figure figcaption p {
           margin-bottom: 78px;
           color: #fff;
           font-weight: 300;
@@ -434,6 +462,111 @@ body ul, body ol {
           font-size: 16px;
           font-family: 'Campton Bold', sans-serif;
           line-height: 60px; }
+  .team .learn-more-wrap {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 26, 26, 0.8); }
+    .team .learn-more-wrap figure {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 990px;
+      height: 500px;
+      background: #fff; }
+      .team .learn-more-wrap figure .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background: #000;
+        padding: 14px;
+        color: #ffffff; }
+      .team .learn-more-wrap figure .img-left {
+        float: left;
+        max-width: 369px;
+        height: 100%; }
+      .team .learn-more-wrap figure figcaption {
+        float: right;
+        width: 621px;
+        height: 100%;
+        padding: 40px 40px 40px 20px; }
+        .team .learn-more-wrap figure figcaption h4 {
+          margin-bottom: 3px;
+          color: #000;
+          font-size: 20px;
+          font-family: 'Campton Bold', sans-serif;
+          line-height: 1;
+          text-transform: uppercase; }
+        .team .learn-more-wrap figure figcaption p, .team .learn-more-wrap figure figcaption .contact-us .send-mail form, .contact-us .send-mail .team .learn-more-wrap figure figcaption form, .team .learn-more-wrap figure figcaption .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .team .learn-more-wrap figure figcaption p {
+          margin-bottom: 40px;
+          color: #000;
+          line-height: 1; }
+        .team .learn-more-wrap figure figcaption span {
+          display: block;
+          margin-bottom: 35px;
+          font-family: "Open Sans", sans-serif;
+          color: #666;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 25px; }
+        .team .learn-more-wrap figure figcaption .learn-more-skills {
+          display: flex;
+          justify-content: space-between;
+          width: 379px;
+          margin-bottom: 30px; }
+          .team .learn-more-wrap figure figcaption .learn-more-skills .skill {
+            width: 80px;
+            height: 80px;
+            padding-top: 24px;
+            border: 8px solid #ec6659;
+            border-radius: 100%;
+            color: #666666;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center; }
+        .team .learn-more-wrap figure figcaption .learn-more-social {
+          display: flex;
+          justify-content: space-between;
+          width: 200px; }
+          .team .learn-more-wrap figure figcaption .learn-more-social li {
+            width: 32px;
+            height: 32px;
+            transition-property: transform;
+            transition-duration: 0.3s; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li a {
+              height: 32px;
+              background: url("../../images/icons/social.png") no-repeat; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:hover {
+              transform: scale(1.1); }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(1) a {
+              background-position: 0; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(1):hover a {
+              background-position: -32px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(2) a {
+              background-position: -64px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(2):hover a {
+              background-position: -96px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(3) a {
+              background-position: -128px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(3):hover a {
+              background-position: -160px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(4) a {
+              background-position: -192px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(4):hover a {
+              background-position: -224px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(5) a {
+              background-position: -256px; }
+            .team .learn-more-wrap figure figcaption .learn-more-social li:nth-child(5):hover a {
+              background-position: -288px; }
 
 .client {
   padding: 100px 0 67px;
@@ -451,7 +584,7 @@ body ul, body ol {
   background-color: #e74c3c;
   font-size: 0;
   color: #fff; }
-  .hire-us p {
+  .hire-us p, .hire-us .contact-us .send-mail form, .contact-us .send-mail .hire-us form, .hire-us .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .hire-us p {
     display: inline-block;
     vertical-align: baseline;
     margin-right: 190px;
@@ -492,7 +625,7 @@ body ul, body ol {
     font-size: 20px;
     font-weight: 300;
     line-height: 30px; }
-  .portfolios .container > p {
+  .portfolios .container > p, .portfolios .contact-us .send-mail .container > form, .contact-us .send-mail .portfolios .container > form, .portfolios .contact-us .send-mail form:hover .container > p, .contact-us .send-mail form:hover .portfolios .container > p {
     margin-bottom: 35px;
     color: #666;
     font-weight: 300;
@@ -566,7 +699,7 @@ body ul, body ol {
           width: 100%;
           height: 100%;
           font-size: 16px; }
-          .portfolios .figure-container .flex figure:hover figcaption p {
+          .portfolios .figure-container .flex figure:hover figcaption p, .portfolios .figure-container .flex figure:hover figcaption .contact-us .send-mail form, .contact-us .send-mail .portfolios .figure-container .flex figure:hover figcaption form {
             opacity: 1; }
           .portfolios .figure-container .flex figure:hover figcaption .button {
             opacity: 1; }
@@ -580,7 +713,7 @@ body ul, body ol {
           font-size: 0;
           text-align: center;
           transition: 0.3s ease-in-out; }
-          .portfolios .figure-container .flex figure figcaption p {
+          .portfolios .figure-container .flex figure figcaption p, .portfolios .figure-container .flex figure figcaption .contact-us .send-mail form, .contact-us .send-mail .portfolios .figure-container .flex figure figcaption form {
             opacity: 0;
             margin-bottom: 30px;
             color: #fff;
@@ -604,7 +737,7 @@ body ul, body ol {
       content: "";
       width: 21px;
       height: 16px;
-      margin-right: 10px;
+      margin: -4px 10px 0 0;
       vertical-align: middle;
       background: url(../../images/icons/reload-arrows.png) no-repeat; }
     .portfolios .load-more:hover {
@@ -673,7 +806,7 @@ body ul, body ol {
       padding-top: 156px;
       border: 2px dashed #dbd8d8;
       text-align: center; }
-      .we-are-hiring figure figcaption p {
+      .we-are-hiring figure figcaption p, .we-are-hiring figure figcaption .contact-us .send-mail form, .contact-us .send-mail .we-are-hiring figure figcaption form, .we-are-hiring figure figcaption .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .we-are-hiring figure figcaption p {
         color: #666;
         font-weight: 300; }
   .we-are-hiring h3 {
@@ -685,7 +818,7 @@ body ul, body ol {
     .we-are-hiring h3 span {
       color: #e74c3c;
       font-weight: 700; }
-  .we-are-hiring .container > p {
+  .we-are-hiring .container > p, .we-are-hiring .contact-us .send-mail .container > form, .contact-us .send-mail .we-are-hiring .container > form, .we-are-hiring .contact-us .send-mail form:hover .container > p, .contact-us .send-mail form:hover .we-are-hiring .container > p {
     color: #666;
     font-weight: 300;
     line-height: 30px; }
@@ -710,11 +843,11 @@ body ul, body ol {
     .twitter__btn:hover::before {
       background: url(../../images/icons/bird-symbol-blue.png) no-repeat;
       transform: rotate(360deg) scale(1.2); }
-  .twitter p {
+  .twitter p, .twitter .contact-us .send-mail form, .contact-us .send-mail .twitter form, .twitter .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover .twitter p {
     color: #fff;
     font-weight: 300;
     line-height: 35px; }
-    .twitter p b {
+    .twitter p b, .twitter .contact-us .send-mail form b, .contact-us .send-mail .twitter form b, .contact-us .send-mail form:hover .twitter p b {
       font-weight: 600; }
 
 .contact-us {
@@ -749,6 +882,78 @@ body ul, body ol {
     .contact-us .send-form:hover:after {
       transform: translate(20px, -30px);
       opacity: 0.3; }
+  .contact-us .send-mail {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 26, 26, 0.8); }
+    .contact-us .send-mail form {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 780px;
+      height: 500px;
+      padding: 70px 80px;
+      background: #fff;
+      font-weight: 300;
+      color: #202020; }
+      .contact-us .send-mail form:hover form, .contact-us .send-mail form:hover p, .contact-us .send-mail form:active {
+        font-weight: 300;
+        color: #dfdfdf; }
+      .contact-us .send-mail form .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background: #000;
+        padding: 14px;
+        color: #ffffff;
+        font-family: 'Campton Bold', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase; }
+      .contact-us .send-mail form input {
+        width: 298px;
+        height: 58px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #dfdfdf; }
+        .contact-us .send-mail form input:hover {
+          border: 1px solid #e74c3c; }
+        .contact-us .send-mail form input:focus {
+          outline: none; }
+      .contact-us .send-mail form textarea {
+        width: 620px;
+        height: 159px;
+        padding: 20px;
+        border: 1px solid #dfdfdf;
+        overflow: hidden;
+        resize: none; }
+        .contact-us .send-mail form textarea:hover {
+          border: 1px solid #e74c3c; }
+        .contact-us .send-mail form textarea:focus {
+          outline: none; }
+      .contact-us .send-mail form button {
+        width: 620px;
+        height: 45px;
+        background-color: #e74c3c;
+        border: none;
+        cursor: pointer; }
+
+#send-button {
+  background-image: url("../../images/icons/send-symb.png");
+  background-repeat: no-repeat;
+  background-position: 50%; }
 
 footer {
   padding: 95px 0;
@@ -758,7 +963,7 @@ footer {
   footer figcaption {
     width: 775px;
     margin: 0 auto 30px; }
-  footer p {
+  footer p, footer .contact-us .send-mail form, .contact-us .send-mail footer form, footer .contact-us .send-mail form:hover p, .contact-us .send-mail form:hover footer p, footer .contact-us .send-mail form:active, .contact-us .send-mail footer form:active {
     color: #b5b5b5;
     font-weight: 300;
     letter-spacing: 0.8px; }
