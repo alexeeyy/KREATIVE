@@ -1,13 +1,16 @@
 .header
+  position: relative
   padding: 43px 0 47px
-  background: url("../../images/backgrounds/slider-6.jpg") no-repeat
+  //background: url("../../images/backgrounds/slider-6.jpg") no-repeat
   background-size: cover
   color: #eee
+  & .container
+    width: 72.307692%
   &__top
     display: flex
     justify-content: space-between
     align-items: center
-    margin-bottom: 200px
+    margin-bottom: 170px
     & .logo
       height: 25px
       max-width: 170px
@@ -35,6 +38,48 @@
       &:hover
         background-color: $primary
         border: 2px solid $primary
+
+  & .slider-nav
+    text-align: center
+    font-size: 0
+    & li
+      display: inline-block
+      vertical-align: top
+      width: 40px
+      height: 3px
+      margin: 0 4px
+      background: #eee
+      cursor: pointer
+      &:hover
+        background: $primary
+
+  //<----------------------------------------------
+  & .prev
+    position: absolute
+    top: 50%
+    left: 0.769231%
+    transform: translateY(-50%)
+    width: 52px
+    height: 52px
+    background: url("../../images/icons/left-gray.png") no-repeat
+    cursor: pointer
+    transition: all .3s
+    &:hover
+      transform: scale(1.1) translateY(-50%)
+      background: url("../../images/icons/left-white.png") no-repeat
+  & .next
+    position: absolute
+    top: 50%
+    right: 0.769231%
+    transform: translateY(-50%)
+    width: 52px
+    height: 52px
+    background: url("../../images/icons/right-gray.png") no-repeat
+    cursor: pointer
+    transition: all .3s
+    &:hover
+      transform: scale(1.1) translateY(-50%)
+      background: url("../../images/icons/right-white.png") no-repeat
   //<----------------------------------------------
   & .nav-menu
     z-index: 999
@@ -47,6 +92,7 @@
     height: 100vh
     background: rgba($primary, 0.9)
     & .container
+      width: 72.307692%
       padding-top: 43px
       & .header__top
         margin-bottom: 230px
@@ -103,4 +149,3 @@
 
             &:nth-child(5) a
               background-position: -256px
-
